@@ -14,7 +14,7 @@ class BankAccount:
         else:
             balance += amnt
             return self.balance
-    def withdraw(self ,amnt)
+    def withdraw(self ,amnt):
         self.balance
         if amnt > 0:
             return self.balance
