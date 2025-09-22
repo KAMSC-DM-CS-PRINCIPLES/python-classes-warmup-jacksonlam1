@@ -12,7 +12,7 @@ class BankAccount:
             self.balance+=dep
         return self.balance
     def withdraw(self,amnt):
-        if amnt >= 0:
+        if self.balance-amnt >= 0:
             self.balance-=amnt
             return self.balance
         else:
