@@ -1,5 +1,5 @@
 class Student:
-    def __init(self, name, grade):
+    def __init__(self, name, grade):
         self.name = name
         self.grade = grade
     def get_name(self):
