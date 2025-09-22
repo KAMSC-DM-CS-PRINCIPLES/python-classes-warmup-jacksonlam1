@@ -8,19 +8,12 @@ class BankAccount:
         self.balance
         return self.balance
     def deposit(self,dep):
-        self.balance
-        if dep < 0:
-            return self.balance
-        else:
-            self.balance += dep
-            return self.balance
+        if dep > 0:
+            self.balance+=dep
+        return self.balance
     def withdraw(self,amnt):
-        self.balance
-        if amnt > 0:
+        if amnt >= 0:
+            self.balance-=amnt
             return self.balance
         else:
-            if self.balance-amnt<0:
-                return "Insufficient Funds"
-            else:
-                balance -= amnt
-                return self.balance
+            return "Insufficient Funds"
